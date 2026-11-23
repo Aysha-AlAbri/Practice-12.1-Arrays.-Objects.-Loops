@@ -6,6 +6,15 @@
 
 function getMin(numbers) {
   // your code
+  let min = null;
+
+  for (const num of numbers) {
+    if (min === null || num < min) {
+      min = num;
+    }
+  }
+
+  return min;
 }
 
 // Expected output:
