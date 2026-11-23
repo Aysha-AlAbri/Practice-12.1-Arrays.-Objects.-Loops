@@ -7,6 +7,11 @@
 
 function getNames(users) {
   // your code
+  const names = [];
+  for (const user of users) {
+    names.push(user.name); 
+  }
+  return names;
 }
 
 const users = [
