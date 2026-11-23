@@ -6,16 +6,23 @@
 
 function getAdultNames(users) {
   // your code
-}
+  const names = [];
+  for (const user of users) {
+    if (user.age >= 18) {
+      names.push(user.name);
+    }
+  }
+    return names;
+  }
 
-const users = [
-  { name: "Ann", age: 25, city: "Muscat" },
-  { name: "Bob", age: 15, city: "Salalah" },
-  { name: "Cid", age: 18, city: "Muscat" },
-];
-const oneUser = [{ name: "Tim", age: 10, city: "Sohar" }];
+  const users = [
+    { name: "Ann", age: 25, city: "Muscat" },
+    { name: "Bob", age: 15, city: "Salalah" },
+    { name: "Cid", age: 18, city: "Muscat" },
+  ];
+  const oneUser = [{ name: "Tim", age: 10, city: "Sohar" }];
 
-// Expected output:
-console.log(getAdultNames(users));    // ["Ann", "Cid"]
-console.log(getAdultNames(oneUser));  // []
-console.log(getAdultNames([]));       // []
+  // Expected output:
+  console.log(getAdultNames(users));    // ["Ann", "Cid"]
+  console.log(getAdultNames(oneUser));  // []
+  console.log(getAdultNames([]));       // []
