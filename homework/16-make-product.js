@@ -6,6 +6,12 @@
 
 function makeProduct(name, price, qty) {
   // your code
+  return {
+    name: name,
+    price: price,
+    qty: qty,
+    total: price * qty
+  };
 }
 
 // Expected output:
