@@ -6,6 +6,8 @@
 
 function describeCity(city) {
   // your code
+  return `${city.name} : ${city.temperature} C`;
+
 }
 
 // Expected output:
