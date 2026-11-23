@@ -7,6 +7,7 @@
 
 function findByName(users, name) {
   // your code
+  return users.find(u => u.name === name) ?? null;
 }
 
 const users = [
