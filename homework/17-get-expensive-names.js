@@ -7,6 +7,14 @@
 
 function getExpensiveNames(products, limit) {
   // your code
+  const names = [];
+
+  for (const product of products) {
+    if (product.price > limit) {
+      names.push(product.name);
+    }
+  }
+  return names;
 }
 
 const products = [
