@@ -6,6 +6,7 @@
 
 function getLastItem(items) {
   // your code
+  return items.pop() || null;
 }
 
 // Expected output:
