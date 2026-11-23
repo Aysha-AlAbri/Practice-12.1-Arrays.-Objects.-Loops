@@ -6,6 +6,7 @@
 
 function addAndCount(items, newItem) {
   // your code
+  return items.push(newItem);
 }
 
 // Expected output:
