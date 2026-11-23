@@ -6,7 +6,16 @@
 
 function getMax(numbers) {
   // your code
+
+  
+ let biggest= numbers[0] || null;
+
+ for (const num of numbers){
+  if (biggest < num) biggest = num;
+  }
+ return biggest
 }
+
 
 // Expected output:
 console.log(getMax([3, 9, 4]));     // 9
