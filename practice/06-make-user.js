@@ -6,6 +6,11 @@
 
 function makeUser(name, age) {
   // your code
+  return {
+    name,
+    age,
+    isAdult: age >= 18
+  }
 }
 
 // Expected output:
