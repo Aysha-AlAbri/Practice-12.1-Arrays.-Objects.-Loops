@@ -6,6 +6,15 @@
 
 function countByCity(users) {
   // your code
+  const count = {};
+  for (const user of users) {
+    if (count[user.city]) {
+      count[user.city] += 1;
+    } else {
+      count[user.city] = 1;
+    }
+  }
+  return count;
 }
 
 const users = [
