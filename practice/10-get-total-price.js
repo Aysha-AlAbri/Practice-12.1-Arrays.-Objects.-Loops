@@ -6,6 +6,11 @@
 
 function getTotalPrice(products) {
   // your code
+  let total = 0;
+  for (const product of products){
+    total += product.price * product.qty;
+}
+return total;
 }
 
 // Expected output:
